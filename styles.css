@@ -1,0 +1,514 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: SoDo Sans,
+        Helvetica,
+        Arial,
+        sans-serif;
+    background-color: white;
+}
+
+/* Estilos para la barra de navegación */
+
+.header {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    padding: 20px;
+}
+
+.topnavbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+.topnavbar .nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.topnavbar .nav .nav-item .item-image {
+    max-width: 50px;
+}
+
+.topnavbar .nav .nav-item a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.topnavbar .nav .nav-izq a:hover {
+    color: green;
+}
+
+.right-nav {
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.nav-item-2 {
+    border: 2px solid black;
+    font-weight: 500;
+    padding: 8px 4px;
+    border-radius: 25px;
+    width: 80px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-extra a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item-2:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.nav-loc:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Tarjetas */
+
+#contenedor-tarjetas {
+    display: grid;  
+    margin-top: 20px;
+
+
+}
+
+.tarjeta-wrapper {
+    margin-bottom: 20px;
+    background-color: white;
+    
+}
+#tarjeta-uno, 
+#tarjeta-dos, 
+#tarjeta-tres,
+#tarjeta-cuatro,
+#tarjeta-cinco {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+
+#tarjeta-uno {
+    background-color: #1E3932;
+    
+}
+
+#tarjeta-dos {
+    background-color: #0044Ba;
+}
+
+#tarjeta-tres {
+    background-color: #DC3545;
+}
+
+#tarjeta-cuatro {
+    background-color: #1E3932;
+}
+
+#tarjeta-cinco {
+    background-color: #DC3545;
+}
+
+#tarjeta-uno .contenedor-imagen, #tarjeta-tres .contenedor-imagen, #tarjeta-cinco .contenedor-imagen {
+    width: 50%;
+}
+
+#tarjeta-dos .contenedor-imagen, #tarjeta-cuatro .contenedor-imagen {
+    order: 2;
+    width: 50%;
+}
+
+#tarjeta-uno  .contenedor-imagen .imagen-starbucks,
+#tarjeta-dos .contenedor-imagen .imagen-starbucks,
+#tarjeta-tres .contenedor-imagen .imagen-starbucks,
+#tarjeta-cuatro .contenedor-imagen .imagen-starbucks,
+#tarjeta-cinco .contenedor-imagen .imagen-starbucks {
+    max-width: 100%;
+    margin-right: auto;
+}
+
+
+
+.contenedor-imagen{
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contenedor-texto {
+    color: white;
+    text-align: center;
+    width: 40%;
+    font-family: "Catamaran", sans-serif;
+    padding: 32px 16px;
+}
+
+
+.contenedor-interno {
+    display: inline-block;
+
+}
+
+
+.contenedor-texto h3 {
+    font-size: 2.5rem;
+    font-weight: 650;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Centrar el título */
+}
+
+.contenedor-texto span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contenedor-texto p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.texto {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.boton{
+    border: 2px solid white;
+        font-weight: 500;
+        padding: 10px 25px;
+        border-radius: 25px;
+        color: white;
+        width: auto;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        /* Fondo transparente */
+        white-space: nowrap;
+}
+
+
+
+
+/* Tarjetas pequeñas */
+#tarjetas-pequenas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#tarjeta-pequena1,
+#tarjeta-pequena2 {
+    width: 48%;
+    /* Ajuste de tamaño para que sean más grandes que las tarjetas pequeñas originales */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#tarjeta-pequena1 {
+    background-color: #f6bfd9;
+    color: #f585ba;
+    /* Fondo rojo */
+    text-align: center;
+        /* Centra el contenido del contenedor */
+        padding: 0px;
+}
+
+#tarjeta-pequena2 {
+    background-color: #98cde4;
+    color: #57bce7;
+    /* Fondo azul */
+    text-align: center;
+        /* Centra el contenido del contenedor */
+    padding: 0px;
+}
+
+#tarjeta-pequena1 .contenedor-imagen .contenedor-interno,
+#tarjeta-pequena2 .contenedor-imagen .contenedor-interno {
+    width: 100%;
+    text-align: center;
+    padding: 10px px;
+}
+
+#tarjeta-pequena1 .imagen-starbucks,
+#tarjeta-pequena2 .imagen-starbucks {
+    max-width: 100%;
+    height: auto;
+}
+
+#tarjeta-pequena1 .imagen-starbucks,
+#tarjeta-pequena2 .imagen-starbucks {
+    max-width: 100%;
+    height: auto;
+}
+
+#tarjeta-pequena1 .cont-1 {
+    color: #f84398;
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: block;
+        /* Asegura que el span se comporte como un elemento de bloque */
+    margin-bottom: 10px;
+    
+    /* Asegura que el span se comporte como un elemento en línea */
+  
+   
+}
+
+#tarjeta-pequena2 .cont-1 {
+    color: #3392bb;
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: block;
+    
+    
+    /* Asegura que el span se comporte como un elemento en línea */
+
+
+}
+
+#tarjeta-pequena1 .boton {
+    border: 2px solid #f84398;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: #f84398;
+    background-color: transparent;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+        /* Asegura que el botón se comporte como un elemento en línea */
+    margin-top: 10px;
+}
+
+#tarjeta-pequena2 .boton {
+    border: 2px solid #3392bb;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: #3392bb;
+    background-color: transparent;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+#tarjeta-pequena1 .boton:hover {
+    background-color: #f84398;
+    color: white;
+}
+#tarjeta-pequena2 .boton:hover {
+    background-color: #57bce7;
+    color: white;
+}
+
+
+
+/* Footer*/
+footer {
+    background-color: #f8f8f8;
+    /* Fondo gris claro */
+    color: #333;
+    /* Texto gris oscuro */
+    font-family: SoDo Sans,
+            Helvetica,
+            Arial,
+            sans-serif;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0;
+    box-shadow: 0 -3px 3px rgba(0, 0, 0, .1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Secciones */
+.footer-section {
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-section ul li a:hover {
+    color: green;
+    /* Azul de resalte */
+}
+
+/* Enlaces adicionales */
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+}
+
+.footer-links ul li {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+/*HOVER*/
+.footer-links ul li a:hover {
+    color: green;
+}
+
+
+.footer-social {
+    margin: 20px 0;
+}
+
+.footer-social a {
+    color: #333;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #0078c2;
+}
+
+.fa-instagram:hover {
+    color: #f84398;
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+
+
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #666;
+}
+
+
+
+
+
+/*cookies*/
+.cookie-banner {
+    padding: 30px;
+    border-top: 1px solid;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+}
+
+.banner-text-container {
+    flex-grow: 0;
+}
+
+.cookie-banner .banner-text-bold {
+    font-weight: bold;
+}
+
+.cookie-banner .banner-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-banner .banner-button-container .banner-button {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    padding: 10px 5px;
+    border-radius: 25px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.cookie-banner {
+    padding: 30px;
+    border-top: 1px solid;
+    position: fixed;
+    /* Cambiado de absolute a fixed */
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    /* Para espaciar el texto y el botón */
+    background-color: white;
+    /* Asegúrate de que el fondo sea visible */
+    z-index: 1000;
+    /* Asegúrate de que el banner esté por encima de otros elementos */
+}
+
+.invisible {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    #tarjeta-uno,
+    #tarjeta-dos {
+        grid-template-columns: 2fr;
+        grid-template-rows: auto auto;
+    }
+
+    #tarjeta-uno .contenedor-imagen,
+    #tarjeta-dos .contenedor-imagen {
+        order: -1;
+        /* Mueve la imagen arriba */
+        
+    }
+
+    .contenedor-texto {
+        width: 100%;
+    }
+
+}
